@@ -22,3 +22,9 @@ Route::get('/inicio', function () {
 Route::get('/productos', function () {
     return view('productos');
 });
+Route::get('/perfil', function () {
+    return view('perfil');
+});
+Route::get('/registro', function () {
+    return view('registro-sesion');
+});
