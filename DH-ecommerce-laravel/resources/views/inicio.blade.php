@@ -67,7 +67,7 @@ footer {
 	<title>E-commerce</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="/css/app.css">
+	<link rel="stylesheet" href="">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -81,7 +81,7 @@ footer {
 	</div>
   </div>
 
-  <nav class="navbar navbar-inverse">
+  <nav class="navbar navbar-inverse" role="navigation">
 	<div class="container-fluid">
   	<div class="navbar-header">
     	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -93,10 +93,10 @@ footer {
   	</div>
   	<div class="collapse navbar-collapse" id="myNavbar">
     	<ul class="nav navbar-nav">
-      	<li class=""><a href="ecommerce-index.php">Home</a></li>
-      	<li><a href="ecommerce-products.php">Products</a></li>
-      	<li><a href="ecommerce-index.php#faqs">FAQs</a></li>
-      	<li><a href="ecommerce-index.php#contact">Contact</a></li>
+      	<li class=""><a href="ecommerce-index.php">Inicio</a></li>
+      	<li><a href="ecommerce-products.php">Productos</a></li>
+      	<li><a href="ecommerce-index.php#faqs">Preguntas frecuentes</a></li>
+      	<li><a href="ecommerce-index.php#contact">Contacto</a></li>
     	</ul>
     	<ul class="nav navbar-nav navbar-right">
       	<li><a href="ecommerce-profile.php"><span class="glyphicon glyphicon-user"></span> Ingresar</a></li>
@@ -140,7 +140,7 @@ footer {
 </div>
 
 <div class="container">
-    	<h2 id="faqs" class="text-center">FAQs</h2>
+    	<h2 id="faqs" class="text-center">Preguntas frecuentes</h2>
     	<div class="panel-group" id="accordion">
       	<div class="panel panel-default">
         	<div class="panel-heading">
@@ -181,7 +181,7 @@ footer {
     	</div>
 </div>
 <!-- Contact Section -->
-<h2 class="text-center" id="contact">CONTACT</h2>
+<h2 class="text-center" id="contact">CONTACTO</h2>
 <div class="container bg-grey well">
 	<div class="row">
     	<div class="col-sm-5">
@@ -202,7 +202,7 @@ footer {
     	<textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
     	<div class="row">
         	<div class="col-sm-12 form-group">
-        	<button class="btn btn-default pull-right" type="submit">Send</button>
+        	<button class="btn btn-default pull-right" type="submit">Enviar</button>
         	</div>
     	</div>
     	</div>
@@ -234,23 +234,20 @@ footer {
        		 <h4>Menu —</h4>
        		 <div class="col-md-6">
                 	<ul class="pages">
-                    	<li><a href="ecommerce-index.php">Home</a></li>
-                    	<li><a href="ecommerce-products.php">Products</a></li>
-                    	<li><a href="ecommerce-index.php#faqs">FAQs</a></li>
-                    	<li><a href="ecommerce-index.php#contact">Contact</a></li>
+                    	<li><a href="ecommerce-index.php">Inicio</a></li>
+                    	<li><a href="ecommerce-products.php">Productos</a></li>
+                    	<li><a href="ecommerce-index.php#faqs">Preguntas</a></li>
+                    	<li><a href="ecommerce-index.php#contact">Contacto</a></li>
                 	</ul>
             	</div>
        		 <div class="col-md-6">
                 	<ul class="list">
-                    	<li><a href="ecommerce-index.php#signIn">Sign in</a></li>
-                    	<li><a href="ecommerce-index.php#logIn">Log in</a></li>
-                    	<li><a href="ecommerce-profile.php">Your account</a></li>
-                    	<li><a href="ecommerce-cart.php">Cart</a></li>
+                    	<li><a href="ecommerce-cart.php">Carrito</a></li>
                 	</ul>
             	</div>
         	</div>
    		 <div class="col-md-2 footer-social animated fadeInDown">
-       		 <h4>Follow Us</h4>
+       		 <h4>Seguinos</h4>
        		 <ul>
            		 <li><a href="https://www.facebook.com/">Facebook</a></li>
            		 <li><a href="https://twitter.com/">Twitter</a></li>
@@ -258,7 +255,7 @@ footer {
             	</ul>
         	</div>
    		 <div class="col-md-3 footer-ns animated fadeInRight">
-       		 <h4>Newsletter</h4>
+       		 <h4>Envianos tu opinion!</h4>
             	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
             	<p>
                 	<div class="input-group">
