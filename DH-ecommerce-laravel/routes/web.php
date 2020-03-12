@@ -28,3 +28,12 @@ Route::get('/perfil', function () {
 Route::get('/registro', function () {
     return view('registro-sesion');
 });
+Route::get('/carrito', function () {
+    return view('carrito');
+});
+Route::get('/detalle', function () {
+    return view('detalleProductos');
+});
+Route::get('/listado', function () {
+    return view('listadoProductos');
+});
