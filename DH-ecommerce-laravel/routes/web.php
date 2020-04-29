@@ -37,3 +37,7 @@ Route::get('/detalle', function () {
 Route::get('/listado', function () {
     return view('listadoProductos');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

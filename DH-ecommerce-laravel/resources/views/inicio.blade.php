@@ -74,7 +74,7 @@ footer {
   </head>
   <body>
 
-  <div class="jumbotron">
+  <div class="jumbotron" style="margin-bottom: 0px;">
 	<div class="container text-center">
   	<h1 id="home">Online Store</h1>
   	<p>Mission, Vission & Values</p>
@@ -84,26 +84,52 @@ footer {
   <nav class="navbar navbar-inverse" role="navigation">
 	<div class="container-fluid">
   	<div class="navbar-header">
-    	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-      	<span class="icon-bar"></span>
-      	<span class="icon-bar"></span>
-      	<span class="icon-bar"></span>
-    	</button>
     	<a class="navbar-brand" href="#">Logo</a>
   	</div>
-  	<div class="collapse navbar-collapse" id="myNavbar">
-    	<ul class="nav navbar-nav">
+  	<ul class="nav navbar-nav">
       	<li class=""><a href="ecommerce-index.php">Inicio</a></li>
       	<li><a href="ecommerce-products.php">Productos</a></li>
       	<li><a href="ecommerce-index.php#faqs">Preguntas frecuentes</a></li>
       	<li><a href="ecommerce-index.php#contact">Contacto</a></li>
-    	</ul>
-    	<ul class="nav navbar-nav navbar-right">
-      	<li><a href="ecommerce-profile.php"><span class="glyphicon glyphicon-user"></span> Ingresar</a></li>
-      	<li><a href="./ecommerce-cart.php"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
-    	</ul>
-  	</div>
-	</div>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+        <li>
+          @if (Route::has('login'))
+              <div >
+                  @auth
+                    <li class="nav-item dropdown">
+                        <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                            {{ Auth::user()->nombre }} <span class="caret"></span>
+                        </a>
+
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="{{ url('logout') }}"
+                               onclick="event.preventDefault();
+                                             document.getElementById('logout-form').submit();">
+                                {{ __('Logout') }}
+                            </a>
+
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                @csrf
+                            </form>
+                        </div>
+                    </li>
+                    <li>
+                      <a href="./ecommerce-cart.php"><span class="glyphicon glyphicon-shopping-cart"></span> Mi carrito</a>
+                    </li>
+                  @else
+                      <a href="{{ route('login') }}">Ingresá</a>
+
+                      @if (Route::has('register'))
+                          <a href="{{ route('register') }}">Registrarte</a>
+                      @endif
+                  @endauth
+              </div>
+          @endif
+        </li>
+
+    </ul>
+  </div>
   </nav>
 
    <div class="container">
@@ -117,13 +143,13 @@ footer {
       	<!-- Wrapper for slides -->
       	<div class="carousel-inner" style="margin-bottom: 20px;">
         	<div class="item active">
-          	<img src="imagenes/imagen1.jpg" alt="notebook" style="width:100%;">
+          	<img src="storage/imagen1.jpg" alt="notebook" style="width:100%;">
         	</div>
         	<div class="item">
-          	<img src="imagenes/imagen2.jpg" alt="computer" style="width:100%;">
+          	<img src="storage/imagen2.jpg" alt="computer" style="width:100%;">
         	</div>
         	<div class="item">
-          	<img src="imagenes/imagen3.jpg" alt="laptop" style="width:100%;">
+          	<img src="storage/imagen3.jpg" alt="laptop" style="width:100%;">
         	</div>
       	</div>
       	<!-- Left and right controls -->
