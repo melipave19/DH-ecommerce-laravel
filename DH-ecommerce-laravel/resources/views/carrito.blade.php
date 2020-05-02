@@ -79,8 +79,8 @@
 
       <div class="jumbotron" style="margin-bottom: 0px;">
     	<div class="container text-center">
-      	<h1 id="home">Online Store</h1>
-      	<p>Mission, Vission & Values</p>
+      	<h1 id="home">Tienda Online</h1>
+      	<p>Poder y tecnología a tu alcance</p>
     	</div>
       </div>
 
@@ -141,26 +141,26 @@
     	<table id="cart" class="table table-hover table-condensed">
             <thead>
                 <tr>
-                    <th style="width:50%">Product</th>
-                    <th style="width:10%">Price</th>
-                    <th style="width:8%">Quantity</th>
+                    <th style="width:50%">Productos</th>
+                    <th style="width:10%">Precio</th>
+                    <th style="width:8%">Cantidad</th>
                     <th style="width:22%">Subtotal</th>
                     <th style="width:10%"></th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td data-th="Product">
+                    <td data-th="Productos">
                         <div class="row">
                             <div class="col-sm-2 hidden-xs"><img src="http://placehold.it/100x100" alt="..." class="img-responsive"/></div>
                             <div class="col-sm-10">
-                                <h4 class="nomargin">Product 1</h4>
-                                <p>Product detail...</p>
+                                <h4 class="nomargin">Producto 1</h4>
+                                <p>Detalle del producto...</p>
                             </div>
                         </div>
                     </td>
-                    <td data-th="Price">$99.99</td>
-                    <td data-th="Quantity">
+                    <td data-th="Precio">$99.99</td>
+                    <td data-th="Cantidad">
                         <input type="number" class="form-control" value="1">
                     </td>
                     <td data-th="Subtotal">99.99</td>
@@ -179,10 +179,10 @@
                     <td class="text-center"><strong>Total 99.99</strong></td>
                 </tr>
                 <tr>
-                    <td><a href="./ecommerce-products.php" class="btn btn-warning"><i class="fa fa-angle-left"></i> Continue Shopping</a></td>
+                    <td><a href="./ecommerce-products.php" class="btn btn-warning"><i class="fa fa-angle-left"></i> Continuar comprando</a></td>
                     <td colspan="2" class="hidden-xs"></td>
                     <td class="hidden-xs text-center"><strong>Total $99.99</strong></td>
-                    <td><a href="#" class="btn btn-success btn-block">Checkout <i class="fa fa-angle-right"></i></a></td>
+                    <td><a href="#" class="btn btn-success btn-block">Comprar<i class="fa fa-angle-right"></i></a></td>
                 </tr>
             </tfoot>
         </table>
@@ -191,55 +191,52 @@
 <div class="container-fixed">
     <!--- Footer ------------>
     <footer class="footer-bs">
-        <div class="row">
-        	<div class="col-md-3 footer-brand animated fadeInLeft">
-            	<h2>E-commerce</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <p>© 2019 BS3 UI Kit, All rights reserved</p>
-            </div>
-        	<div class="col-md-4 footer-nav animated fadeInUp">
-            	<h4>Menu —</h4>
-            	<div class="col-md-6">
-                    <ul class="pages">
-                        <li><a href="ecommerce-index.php">Home</a></li>
-                        <li><a href="ecommerce-products.php">Products</a></li>
-                        <li><a href="ecommerce-index.php#faqs">FAQs</a></li>
-                        <li><a href="ecommerce-index.php#contact">Contact</a></li>
-                    </ul>
-                </div>
-            	<div class="col-md-6">
-                    <ul class="list">
-                        <li><a href="ecommerce-index.php#signIn">Sign in</a></li>
-                        <li><a href="ecommerce-index.php#logIn">Log in</a></li>
-                        <li><a href="ecommerce-profile.php">Your account</a></li>
-                        <li><a href="ecommerce-cart.php">Cart</a></li>
-                    </ul>
-                </div>
-            </div>
-        	<div class="col-md-2 footer-social animated fadeInDown">
-            	<h4>Follow Us</h4>
-            	<ul>
-                	<li><a href="https://www.facebook.com/">Facebook</a></li>
-                	<li><a href="https://twitter.com/">Twitter</a></li>
-                	<li><a href="https://www.instagram.com/">Instagram</a></li>
-                </ul>
-            </div>
-        	<div class="col-md-3 footer-ns animated fadeInRight">
-            	<h4>Newsletter</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-                <p>
-                    <div class="input-group">
-                      <input type="text" class="form-control" placeholder="Search for...">
-                      <span class="input-group-btn">
-                        <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-envelope"></span></button>
-                      </span>
-                    </div><!-- /input-group -->
-                 </p>
-            </div>
-        </div>
-    </footer>
-    <section style="text-align:center; margin:10px auto;"><p>Designed by <a href="">EquipoFoo</a></p></section>
+      	<div class="row">
+     		 <div class="col-md-3 footer-brand animated fadeInLeft">
+         		 <h2>Tienda Online</h2>
+            	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              	<p>© 2019 BS3 UI Kit, All rights reserved</p>
+          	</div>
+     		 <div class="col-md-4 footer-nav animated fadeInUp">
+         		 <h4>Menu —</h4>
+         		 <div class="col-md-6">
+                  	<ul class="pages">
+                      	<li><a href="ecommerce-index.php">Inicio</a></li>
+                      	<li><a href="ecommerce-products.php">Productos</a></li>
+                      	<li><a href="ecommerce-index.php#faqs">Preguntas</a></li>
+                      	<li><a href="ecommerce-index.php#contact">Contacto</a></li>
+                  	</ul>
+              	</div>
+         		 <div class="col-md-6">
+                  	<ul class="list">
+                      	<li><a href="ecommerce-cart.php">Carrito</a></li>
+                  	</ul>
+              	</div>
+          	</div>
+     		 <div class="col-md-2 footer-social animated fadeInDown">
+         		 <h4>Seguinos</h4>
+         		 <ul>
+             		 <li><a href="https://www.facebook.com/">Facebook</a></li>
+             		 <li><a href="https://twitter.com/">Twitter</a></li>
+             		 <li><a href="https://www.instagram.com/">Instagram</a></li>
+              	</ul>
+          	</div>
+     		 <div class="col-md-3 footer-ns animated fadeInRight">
+         		 <h4>SUSCRIBITE A NUESTRO NEWSLETTER</h4>
+              	<p>Informate de lo último de Tienda Online. Nuestras ofertas y novedades directamente en tu e-mail.</p>
+              	<p>
+                  	<div class="input-group">
+                    	<input type="text" class="form-control" placeholder="Search for...">
+                    	<span class="input-group-btn">
+                      	<button class="btn btn-default" type="button"><span class="glyphicon glyphicon-envelope"></span></button>
+                    	</span>
+                  	</div><!-- /input-group -->
+               	</p>
+          	</div>
+      	</div>
+  	</footer>
+  	<section style="text-align:center; margin:10px auto;"><p>Designed by <a href="">EquipoFoo</a></p></section>
 
-</div>
-</body>
-</html>
+  </div>
+  </body>
+  </html>

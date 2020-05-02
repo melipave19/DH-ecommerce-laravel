@@ -78,8 +78,8 @@ body{
 
       <div class="jumbotron" style="margin-bottom: 0px;">
     	<div class="container text-center">
-      	<h1 id="home">Online Store</h1>
-      	<p>Mission, Vission & Values</p>
+      	<h1 id="home">Tienda Online</h1>
+      	<p>Poder y tecnología a tu alcance</p>
     	</div>
       </div>
 
@@ -137,14 +137,14 @@ body{
             <nav class="container navbar navbar-default secnav">
               <div class="container">
                 <ul class="nav navbar-nav bg-grey">
-                  <li class="active"><a href="#">My details</a></li>
-                  <li><a href="#">My address book</a></li>
-                  <li><a href="#">My orders</a></li>
-                  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Settings<span class="caret"></span></a>
+                  <li class="active"><a href="#">Mi perfil</a></li>
+                  <li><a href="#">Direccion</a></li>
+                  <li><a href="#">Pedidos</a></li>
+                  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Ajustes<span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                      <li><a href="#">Item 1</a></li>
-                      <li><a href="#">Item 2</a></li>
-                      <li><a href="#">Item 3</a></li>
+                      <li><a href="#">Email</a></li>
+                      <li><a href="#">Direccion</a></li>
+                      <li><a href="#">Telefono</a></li>
                     </ul>
                   </li>
                 </ul>
@@ -164,55 +164,52 @@ body{
             <div class="container-fixed">
                 <!--- Footer ------------>
                 <footer class="footer-bs">
-                    <div class="row">
-                    	<div class="col-md-3 footer-brand animated fadeInLeft">
-                        	<h2>E-commerce</h2>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            <p>© 2019 BS3 UI Kit, All rights reserved</p>
-                        </div>
-                    	<div class="col-md-4 footer-nav animated fadeInUp">
-                        	<h4>Menu —</h4>
-                        	<div class="col-md-6">
-                                <ul class="pages">
-                                    <li><a href="ecommerce-index.php">Home</a></li>
-                                    <li><a href="ecommerce-products.php">Products</a></li>
-                                    <li><a href="ecommerce-index.php#faqs">FAQs</a></li>
-                                    <li><a href="ecommerce-index.php#contact">Contact</a></li>
-                                </ul>
-                            </div>
-                        	<div class="col-md-6">
-                                <ul class="list">
-                                    <li><a href="ecommerce-index.php#signIn">Sign in</a></li>
-                                    <li><a href="ecommerce-index.php#logIn">Log in</a></li>
-                                    <li><a href="ecommerce-profile.php">Your account</a></li>
-                                    <li><a href="ecommerce-cart.php">Cart</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    	<div class="col-md-2 footer-social animated fadeInDown">
-                        	<h4>Follow Us</h4>
-                        	<ul>
-                            	<li><a href="https://www.facebook.com/">Facebook</a></li>
-                            	<li><a href="https://twitter.com/">Twitter</a></li>
-                            	<li><a href="https://www.instagram.com/">Instagram</a></li>
-                            </ul>
-                        </div>
-                    	<div class="col-md-3 footer-ns animated fadeInRight">
-                        	<h4>Newsletter</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-                            <p>
-                                <div class="input-group">
-                                  <input type="text" class="form-control" placeholder="Search for...">
-                                  <span class="input-group-btn">
-                                    <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-envelope"></span></button>
-                                  </span>
-                                </div><!-- /input-group -->
-                             </p>
-                        </div>
-                    </div>
-                </footer>
-                <section style="text-align:center; margin:10px auto;"><p>Designed by <a href="">EquipoFoo</a></p></section>
+                  	<div class="row">
+                 		 <div class="col-md-3 footer-brand animated fadeInLeft">
+                     		 <h2>Tienda Online</h2>
+                        	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                          	<p>© 2019 BS3 UI Kit, All rights reserved</p>
+                      	</div>
+                 		 <div class="col-md-4 footer-nav animated fadeInUp">
+                     		 <h4>Menu —</h4>
+                     		 <div class="col-md-6">
+                              	<ul class="pages">
+                                  	<li><a href="ecommerce-index.php">Inicio</a></li>
+                                  	<li><a href="ecommerce-products.php">Productos</a></li>
+                                  	<li><a href="ecommerce-index.php#faqs">Preguntas</a></li>
+                                  	<li><a href="ecommerce-index.php#contact">Contacto</a></li>
+                              	</ul>
+                          	</div>
+                     		 <div class="col-md-6">
+                              	<ul class="list">
+                                  	<li><a href="ecommerce-cart.php">Carrito</a></li>
+                              	</ul>
+                          	</div>
+                      	</div>
+                 		 <div class="col-md-2 footer-social animated fadeInDown">
+                     		 <h4>Seguinos</h4>
+                     		 <ul>
+                         		 <li><a href="https://www.facebook.com/">Facebook</a></li>
+                         		 <li><a href="https://twitter.com/">Twitter</a></li>
+                         		 <li><a href="https://www.instagram.com/">Instagram</a></li>
+                          	</ul>
+                      	</div>
+                 		 <div class="col-md-3 footer-ns animated fadeInRight">
+                     		 <h4>SUSCRIBITE A NUESTRO NEWSLETTER</h4>
+                          	<p>Informate de lo último de Tienda Online. Nuestras ofertas y novedades directamente en tu e-mail.</p>
+                          	<p>
+                              	<div class="input-group">
+                                	<input type="text" class="form-control" placeholder="Search for...">
+                                	<span class="input-group-btn">
+                                  	<button class="btn btn-default" type="button"><span class="glyphicon glyphicon-envelope"></span></button>
+                                	</span>
+                              	</div><!-- /input-group -->
+                           	</p>
+                      	</div>
+                  	</div>
+              	</footer>
+              	<section style="text-align:center; margin:10px auto;"><p>Designed by <a href="">EquipoFoo</a></p></section>
 
-            </div>
-</body>
-</html>
+              </div>
+              </body>
+              </html>

@@ -64,7 +64,7 @@ footer {
   <!DOCTYPE html>
   <html lang="en">
   <head>
-	<title>E-commerce</title>
+	<title>Inicio</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="">
@@ -76,8 +76,8 @@ footer {
 
   <div class="jumbotron" style="margin-bottom: 0px;">
 	<div class="container text-center">
-  	<h1 id="home">Online Store</h1>
-  	<p>Mission, Vission & Values</p>
+  	<h1 id="home">Tienda Online</h1>
+  	<p>Poder y tecnología a tu alcance</p>
 	</div>
   </div>
 
@@ -171,37 +171,34 @@ footer {
       	<div class="panel panel-default">
         	<div class="panel-heading">
           	<h4 class="panel-title">
-            	<a data-toggle="collapse" data-parent="#accordion" href="#collapse1">1: what is the price?</a>
+            	<a data-toggle="collapse" data-parent="#accordion" href="#collapse1">¿Cómo puedo saber cuándo y a qué hora llegará mi compra?</a>
           	</h4>
         	</div>
         	<div id="collapse1" class="panel-collapse collapse in">
-          	<div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-          	sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+          	<div class="panel-body">Puedes hacer seguimiento de tu despacho con el número de orden de despacho que encuentras
+               en la boleta de tu compra. Ahí encontrarás toda la información que necesitas para saber cuándo llegarán
+                tus productos.</div>
         	</div>
       	</div>
       	<div class="panel panel-default">
         	<div class="panel-heading">
           	<h4 class="panel-title">
-            	<a data-toggle="collapse" data-parent="#accordion" href="#collapse2">2: what cards do you have available?</a>
+            	<a data-toggle="collapse" data-parent="#accordion" href="#collapse2">¿Puedo cambiar la fecha o dirección de mi despacho?</a>
           	</h4>
         	</div>
         	<div id="collapse2" class="panel-collapse collapse">
-          	<div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-          	sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+          	<div class="panel-body">Por su seguridad, una vez realizada la compra no es posible realizar un cambio de dirección</div>
         	</div>
       	</div>
       	<div class="panel panel-default">
         	<div class="panel-heading">
           	<h4 class="panel-title">
-            	<a data-toggle="collapse" data-parent="#accordion" href="#collapse3">3: Do you have gamers style computers?</a>
+            	<a data-toggle="collapse" data-parent="#accordion" href="#collapse3">¿Qué hago si no llegaron todos los productos que compré?</a>
           	</h4>
         	</div>
         	<div id="collapse3" class="panel-collapse collapse">
-          	<div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-          	sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+          	<div class="panel-body">Si compras más de un producto, existe la posibilidad de que los recibas en despachos y fechas diferentes.
+               Revisa en la boleta o solicitud de compras las fechas correspondientes o llámanos al Servicio al Cliente al 011 1515151515 </div>
         	</div>
       	</div>
     	</div>
@@ -211,21 +208,21 @@ footer {
 <div class="container bg-grey well">
 	<div class="row">
     	<div class="col-sm-5">
-    	<p>Contact us and we'll get back to you within 24 hours.</p>
-    	<p><span class="glyphicon glyphicon-map-marker"></span> Chicago, US</p>
-    	<p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
-    	<p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
+    	<p>Contáctanos y te responderemos dentro de las 24 horas.</p>
+    	<p><span class="glyphicon glyphicon-map-marker"></span> Argentina, Bs As</p>
+    	<p><span class="glyphicon glyphicon-phone"></span> 011 1515151515</p>
+    	<p><span class="glyphicon glyphicon-envelope"></span> tiendaonline@gmail.com</p>
     	</div>
     	<div class="col-sm-7">
     	<div class="row">
         	<div class="col-sm-6 form-group">
-        	<input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        	<input class="form-control" id="nombre" name="nombre" placeholder="Nombre" type="text" required>
         	</div>
         	<div class="col-sm-6 form-group">
         	<input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
         	</div>
     	</div>
-    	<textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+    	<textarea class="form-control" id="comentario" name="comentario" placeholder="Comentario" rows="5"></textarea><br>
     	<div class="row">
         	<div class="col-sm-12 form-group">
         	<button class="btn btn-default pull-right" type="submit">Enviar</button>
@@ -252,7 +249,7 @@ footer {
 	<footer class="footer-bs">
     	<div class="row">
    		 <div class="col-md-3 footer-brand animated fadeInLeft">
-       		 <h2>E-commerce</h2>
+       		 <h2>Tienda Online</h2>
           	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             	<p>© 2019 BS3 UI Kit, All rights reserved</p>
         	</div>
@@ -281,8 +278,8 @@ footer {
             	</ul>
         	</div>
    		 <div class="col-md-3 footer-ns animated fadeInRight">
-       		 <h4>Envianos tu opinion!</h4>
-            	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+       		 <h4>SUSCRIBITE A NUESTRO NEWSLETTER</h4>
+            	<p>Informate de lo último de Tienda Online. Nuestras ofertas y novedades directamente en tu e-mail.</p>
             	<p>
                 	<div class="input-group">
                   	<input type="text" class="form-control" placeholder="Search for...">
