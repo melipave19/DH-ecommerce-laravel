@@ -22,55 +22,119 @@
       background-color: #f2f2f2;
       padding: 25px;
     }
+    /* Modal */
+    @import "bourbon";
+    .form-signin {
+      	max-width: 380px;
+      	margin: 0 auto;
+      	background-color: #fff;
+    	}
+    .form-signin-heading,
+       	 .checkbox {
+       	   margin-bottom: 30px;
+       	 }
 
-    /*Cart*/
+       	 .checkbox {
+       	   font-weight: normal;
+       	 }
 
-    .table>tbody>tr>td, .table>tfoot>tr>td{
-    vertical-align: middle;
-     }
-      @media screen and (max-width: 600px) {
-          table#cart tbody td .form-control {
-      		width:20%;
-      		display: inline !important;
-      	}
-      	.actions .btn{
-      		width:36%;
-      		margin:1.5em 0;
-          margin-left: -25%;
+       	 .form-control {
+       	   position: relative;
+       	   font-size: 16px;
+       	   height: auto;
+       	   padding: 10px;
+
       	}
 
-      	.actions .btn-info {
-      		float:left;
-      	}
-      	.actions .btn-danger {
-      		float:right;
-      	}
-      	table#cart thead {
-              display: none;
-        }
-      	table#cart tbody td {
-              display: block;
-              padding: .6rem;
-              min-width:320px;
-        }
-      	table#cart tbody tr td:first-child {
-              background: #333;
-              color: #fff;
-        }
-      	table#cart tbody td:before {
-      		content: attr(data-th);
-            font-weight: bold;
-      		display: inline-block;
-            width: 8rem;
-      	}
-      	table#cart tfoot td {
-            display:block;
-        }
-      	table#cart tfoot td .btn {
-            display:block;
-        }
-    }
-  </style>
+       		 .focus {
+       		   z-index: 2;
+       		 }
+
+       	 input[type="text"] {
+       	   margin-bottom: 20px;
+       	   border-bottom-left-radius: 0;
+       	   border-bottom-right-radius: 0;
+       	 }
+
+       	 input[type="password"] {
+       	   margin-bottom: 20px;
+       	   border-top-left-radius: 0;
+       	   border-top-right-radius: 0;
+       	 }
+
+      </style>
+
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+    	<title>Carrito</title>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<link rel="stylesheet" href="">
+    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      </head>
+      <body>
+
+      <div class="jumbotron" style="margin-bottom: 0px;">
+    	<div class="container text-center">
+      	<h1 id="home">Online Store</h1>
+      	<p>Mission, Vission & Values</p>
+    	</div>
+      </div>
+
+      <nav class="navbar navbar-inverse" role="navigation">
+    	<div class="container-fluid">
+      	<div class="navbar-header">
+        	<a class="navbar-brand" href="#">Logo</a>
+      	</div>
+      	<ul class="nav navbar-nav">
+          	<li class=""><a href="ecommerce-index.php">Inicio</a></li>
+          	<li><a href="ecommerce-products.php">Productos</a></li>
+          	<li><a href="ecommerce-index.php#faqs">Preguntas frecuentes</a></li>
+          	<li><a href="ecommerce-index.php#contact">Contacto</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+              @if (Route::has('login'))
+                  <div >
+                      @auth
+                        <li class="nav-item dropdown">
+                            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                {{ Auth::user()->nombre }} <span class="caret"></span>
+                            </a>
+
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="{{ url('logout') }}"
+                                   onclick="event.preventDefault();
+                                                 document.getElementById('logout-form').submit();">
+                                    {{ __('Logout') }}
+                                </a>
+
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                    @csrf
+                                </form>
+                            </div>
+                        </li>
+                        <li>
+                          <a href="./ecommerce-cart.php"><span class="glyphicon glyphicon-shopping-cart"></span> Mi carrito</a>
+                        </li>
+                      @else
+                          <a href="{{ route('login') }}">Ingresá</a>
+
+                          @if (Route::has('register'))
+                              <a href="{{ route('register') }}">Registrarte</a>
+                          @endif
+                      @endauth
+                  </div>
+              @endif
+            </li>
+
+        </ul>
+      </div>
+      </nav>
+
 
 <!-- Cart -->
 <div class="container">

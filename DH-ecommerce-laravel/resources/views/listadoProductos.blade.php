@@ -1,5 +1,4 @@
 <?php
-require 'footer.php';
 
 // Conexion con la Base de Datos DER
 include("pdo.php");
