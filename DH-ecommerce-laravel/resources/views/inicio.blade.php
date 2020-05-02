@@ -117,17 +117,22 @@ footer {
                     <li>
                       <a href="./ecommerce-cart.php"><span class="glyphicon glyphicon-shopping-cart"></span> Mi carrito</a>
                     </li>
+                    <ul class="nav navbar-nav">
+                      <div class="container-fluid">
+                      <div class="navbar-header">
                   @else
-                      <a href="{{ route('login') }}">Ingresá</a>
+                    <li class=""><a href="{{ route('login') }}">Ingresá</a></li>
 
                       @if (Route::has('register'))
-                          <a href="{{ route('register') }}">Registrarte</a>
+                        <li class="">  <a href="{{ route('register') }}">Registrarte</a></li>
                       @endif
                   @endauth
+                    </ul>
               </div>
           @endif
         </li>
-
+</div>
+</div>
     </ul>
   </div>
   </nav>

@@ -66,7 +66,7 @@ body{
         <!DOCTYPE html>
         <html lang="en">
         <head>
-      	<title>Detalle</title>
+      	<title>Inicio</title>
       	<meta charset="utf-8">
       	<meta name="viewport" content="width=device-width, initial-scale=1">
       	<link rel="stylesheet" href="">
@@ -119,17 +119,22 @@ body{
                           <li>
                             <a href="./ecommerce-cart.php"><span class="glyphicon glyphicon-shopping-cart"></span> Mi carrito</a>
                           </li>
+                          <ul class="nav navbar-nav">
+                            <div class="container-fluid">
+                            <div class="navbar-header">
                         @else
-                            <a href="{{ route('login') }}">Ingresá</a>
+                          <li class=""><a href="{{ route('login') }}">Ingresá</a></li>
 
                             @if (Route::has('register'))
-                                <a href="{{ route('register') }}">Registrarte</a>
+                              <li class="">  <a href="{{ route('register') }}">Registrarte</a></li>
                             @endif
                         @endauth
+                          </ul>
                     </div>
                 @endif
               </li>
-
+      </div>
+      </div>
           </ul>
         </div>
         </nav>
