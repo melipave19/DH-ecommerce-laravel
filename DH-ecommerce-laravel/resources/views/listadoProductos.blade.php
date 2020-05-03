@@ -1,4 +1,8 @@
 <?php
+<<<<<<< HEAD
+
+=======
+>>>>>>> 937424c5044e4da8ded33a9ffdb475aa6f427683
 
 // Conexion con la Base de Datos DER
 include("pdo.php");
