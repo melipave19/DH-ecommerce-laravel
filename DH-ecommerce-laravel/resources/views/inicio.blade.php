@@ -259,7 +259,7 @@ footer {
             	<p>© 2019 BS3 UI Kit, All rights reserved</p>
         	</div>
    		 <div class="col-md-4 footer-nav animated fadeInUp">
-       		 <h4>Menu —</h4>
+       		 <h4>Menu</h4>
        		 <div class="col-md-6">
                 	<ul class="pages">
                     	<li><a href="ecommerce-index.php">Inicio</a></li>
