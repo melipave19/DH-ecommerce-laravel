@@ -64,7 +64,7 @@ footer {
   <!DOCTYPE html>
   <html lang="en">
   <head>
-	<title>Inicio</title>
+	<title>Productos</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="">
@@ -145,7 +145,7 @@ footer {
       <div class="panel panel-primary">
         <div class="panel-heading"><a href="" class="text-danger">{{$equipo->nombre_equipo}}</a></div>
         <div class="panel-body"><img src="storage/productos/{{$equipo->imagen_principal}}" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer"><p>{{$equipo->descripcion}}</p><button type="submit" name="buy" class="btn btn-warning" onclick="location.href='ecommerce-detalleProducts.php#products1'">Comprar</button></div>
+        <div class="panel-footer"><p>{{$equipo->descripcion}}</p><a href="detalleProductos.blade.php" class="btn btn-warning" role="button">Ver mas</a></div>
       </div>
     </div>
 
@@ -164,7 +164,7 @@ footer {
               	<p>© 2019 BS3 UI Kit, All rights reserved</p>
           	</div>
      		 <div class="col-md-4 footer-nav animated fadeInUp">
-         		 <h4>Menu —</h4>
+         		 <h4>Menu</h4>
          		 <div class="col-md-6">
                   	<ul class="pages">
                       	<li><a href="ecommerce-index.php">Inicio</a></li>
