@@ -28,7 +28,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected $redirectTo = '/inicio';
 
     /**
      * Create a new controller instance.
@@ -49,9 +49,13 @@ class RegisterController extends Controller
     protected function validator(array $data)
     {
         return Validator::make($data, [
-            'name' => ['required', 'string', 'max:255'],
+            'nombre' => ['required', 'string', 'max:255'],
+            'apellido' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+            'dni' => ['required', 'int'],
+            'usuario' => ['required','string', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
+            'fotoPerfil' => ['file'],
         ]);
     }
 
@@ -63,11 +67,18 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
+      $ruta = $data['fotoPerfil']->store("public");
+      $nombreArchivo = basename($ruta);
         return User::create([
-            'nombre' => $data['name'],
+            'nombre' => $data['nombre'],
+            'apellido' => $data['apellido'],
             'email' => $data['email'],
+            'dni' => $data['dni'],
+            'fecha_nacimiento' => $data['fechaNacimiento'],
+            'usuario' => $data['usuario'],
             'password' => Hash::make($data['password']),
-            'id_imagen' => 1,
+            'id_permisos' => $data['rol'],
+            'foto_perfil' => $nombreArchivo,
         ]);
     }
 }
