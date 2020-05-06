@@ -139,109 +139,39 @@ body{
         </div>
         </nav>
 
+       <div class="container" id="products">
+         <div class="row">
+           <section class= "col-md-5">
+             <img src="/storage/productos/{{$unEquipo->imagen_principal}}" class="img-responsive" style="width:100%" alt="">
+           </section>
+           <section class = "col-md-7">
+             <h4>{{$unEquipo->nombre_equipo}}</h4>
+             <div class="panel panel-warning">
+                <div class="panel-heading">{{$unaCategoria->nombre_categoria}}</div>
+                <div class="panel-body"><p>{{$unEquipo->descripcion}}</p></div>
+                <p><strong>Especificaciones</strong></p>
+                <ul>
+                  <li>Marca: {{$unaMarca->nombre_marca}}</li>
+                  <li>Tamaño pantalla en pulgadas: {{$unEquipo->tamaño_pantalla}}"</li>
+                  <li>Capacidad de disco duro (GB): {{$unEquipo->disco_duro}} GB</li>
+                  <li>Fabricante: {{$unProveedor->razon_social}}</li>
+                  <li>Cantidad disponible: {{$unEquipo->stock_disponible}}</li>
+                </ul>
+             </div>
+             </section>
+             <section class = "col-md-2">
+               <div class="panel panel-danger">
+                 <div class="panel-heading">Precio</div>
+                 <p><strong>$ {{$unEquipo->precio}}</strong> </p>
+               </div>
+             </section>
+             <button class="btn btn-warning btn-block" type="submit" name="button" onclick="location.href='/carrito'" >Agregar al carrito</button>
 
-       <div class="container" id="products1">
-         <div class="row">
-           <section class= "col-md-5">
-             <img src="/storage/imagenes/imagen4.jpg" class="img-responsive" style="width:100%" alt="">
-           </section>
-           <section class = "col-md-7">
-             <h4>NOTEBOOK BANGHO ZERO M4 INTEL J3160 4G SSD-240G 14" FREE</h4>
-    <div class="panel panel-warning">
-      <div class="panel-heading">Descripción</div>
-      <div class="panel-body"><p>Notebook ideal para uso básico, práctica y liviana para transportar.</p></div>
-    </div>
-             <button class="btn btn-warning btn-block" type="submit" name="button" onclick="location.href='ecommerce-cart.php'" >Comprar ahora</button>
-           </section>
          </div>
        </div>
        <br>
        <br>
-       <div class="container" id="products2">
-         <div class="row">
-           <section class= "col-md-5">
-             <img src="/storage/imagenes/imagen5.jpg" class="img-responsive" style="width:100%" alt="">
-           </section>
-           <section class = "col-md-7">
-             <h4>NOTEBOOK DELL INSPIRON 3593 I7 1065G1 8GB SSD256GB 15.6 GEFORCE MX230 2GB DDR5</h4>
-    <div class="panel panel-warning">
-      <div class="panel-heading">Descripción</div>
-      <div class="panel-body"><p>La nueva Dell Inspiron 15 3593, posee un diseño moderno, auténtico con líneas que marcan la tendencia de última generación en Notebooks Dell. Acompañada con componentes de última generación y tecnología fiable. </p></div>
-    </div>
-             <button class="btn btn-warning btn-block" type="submit" name="button" onclick="location.href='ecommerce-cart.php'">Comprar ahora</button>
-           </section>
-         </div>
-       </div>
-       <br>
-       <br>
-       <div class="container" id="products3">
-         <div class="row">
-           <section class= "col-md-5">
-             <img src="/storage/imagenes/imagen6.jpg" class="img-responsive" style="width:100%" alt="">
-           </section>
-           <section class = "col-md-7">
-             <h4>NOTEBOOK LENOVO V130 INTEL PENTIUM N5000 4G 500G 15.6 FREE</h4>
-    <div class="panel panel-warning">
-      <div class="panel-heading">Descripción</div>
-      <div class="panel-body"><p>Ampliá tus posibilidades con la nueva generación de procesadores Intel Pentium. La notebook Lenovo ideal para tareas en la escuela o el hogar. Lista para ofrecerte el óptimo rendimiento en programas y software de oficina y navegación.</p></div>
-    </div>
-             <button class="btn btn-warning btn-block" type="submit" name="button" onclick="location.href='ecommerce-cart.php'">Comprar ahora</button>
-           </section>
-         </div>
-       </div>
-       <br>
-       <br>
-       <div class="container" id="products4">
-         <div class="row">
-           <section class= "col-md-5">
-             <img src="/storage/imagenes/imagen7.jpg" class="img-responsive" style="width:100%" alt="">
-           </section>
-           <section class = "col-md-7">
-             <h4>NOTEBOOK HP HP14-CB011WM CLOUDBOOK CELERON N 3060</h4>
-    <div class="panel panel-warning">
-      <div class="panel-heading">Descripción</div>
-      <div class="panel-body"><p>Con un diseño ligero y superdelgado. esta laptop nunca se pensó para quedarse quieta. Es fácil de transportar y tiene un color brillante poco tradicional para ofrecer un estilo personal distintivo.</p></div>
-    </div>
-             <button class="btn btn-warning btn-block" type="submit" name="button" onclick="location.href='ecommerce-cart.php'">Comprar ahora</button>
-           </section>
-         </div>
-       </div>
-       <br>
-       <br>
-       <div class="container" id="products5">
-         <div class="row">
-           <section class= "col-md-5">
-             <img src="/storage/imagenes/imagen8.jpg" class="img-responsive" style="width:100%" alt="">
-           </section>
-           <section class = "col-md-7">
-             <h4>NOTEBOOK ACER A315-54-559AR INTEL CORE I5 DISCO DE 1TB Y RAM DE 4GB</h4>
-    <div class="panel panel-warning">
-      <div class="panel-heading">Descripción</div>
-      <div class="panel-body"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum ipsam dolorum, quaerat! Quibusdam iste temporibus ex consectetur unde ullam explicabo deserunt commodi ipsam, pariatur eius esse, accusantium, architecto vero sint.</p></div>
-    </div>
-             <button class="btn btn-warning btn-block" type="submit" name="button" onclick="location.href='ecommerce-cart.php'">Comprar ahora</button>
-           </section>
-         </div>
-       </div>
-       <br>
-       <br>
-       <div class="container" id="products6">
-         <div class="row">
-           <section class= "col-md-5">
-             <img src="/storage/imagenes/imagen9.jpg" class="img-responsive" style="width:100%" alt="">
-           </section>
-           <section class = "col-md-7">
-             <h4>NOTEBOOK LENOVO IPS130 64GB CELERON CLOUDBOOK</h4>
-    <div class="panel panel-warning">
-      <div class="panel-heading">Descripción</div>
-      <div class="panel-body"><p>La elección inteligente para lo esencial. Si buscas una laptop ultradelgada y potente que tenga un precio que puedas pagar y no te deje en números rojos. échale un vistazo a la IdeaPad S130. Esta portátil. fácil de usar y pensada para durar. cuenta con una autonomía prolongada de la batería y un dise;o elegante. fino y liviano.</p></div>
-    </div>
-             <button class="btn btn-warning btn-block" type="submit" name="button" onclick="location.href='ecommerce-cart.php'">Comprar ahora</button>
-           </section>
-         </div>
-       </div>
-       <br>
-       <br>
+
        <div class="container-fixed">
            <!--- Footer ------------>
            <footer class="footer-bs">

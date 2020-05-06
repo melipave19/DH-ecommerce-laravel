@@ -19,20 +19,32 @@ Route::get('/inicio', function () {
     return view('inicio');
 });
 
+// Productos
 Route::get('/productos', 'EquipoController@listadoEquipos');
+Route::get('/detalle/{idProducto}', 'EquipoController@mostrarEquipo');
 
-Route::get('/detalle', function () {
-    return view('detalleProductos');
-});
-
+// Perfil
 Route::get('/perfil', function () {
     return view('perfil');
 });
 
+// Agregar equipo
 Route::get('/agregar', 'EquipoController@cargarFormulario');
-
 Route::post('/agregar', 'EquipoController@agregarEquipo');
 
+// Listado equipos para modificar
+Route::get('/productos/actualizar', 'EquipoController@listadoEquiposActualizar');
+
+// Modificar equipo
+Route::get('/productos/actualizar/{idEquipo}', 'EquipoController@actualizarEquipo');
+Route::post('/productos/actualizar/{idEquipo}, EquipoController@modificarEquipo')
+
+//
+// Eliminar equipo
+Route::post('/productos/darBaja/{id}', 'EquipoController@darBajaEquipo');
+Route::post('/productos/darAlta/{id}', 'EquipoController@darAltaEquipo');
+
+// Carrito de compras
 Route::get('/carrito', function () {
     return view('carrito');
 });

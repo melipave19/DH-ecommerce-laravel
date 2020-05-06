@@ -157,14 +157,16 @@ body{
             </nav>
 
             <div class=" container panel panel-default">
-              <div class="panel-body"> <h3>Rick Fort</h3>
-                <img src="storage/imagenes/profile.png" class="img-circle" height="75" width="75" alt="Avatar">
-              </div>
-              <ul>
-                <li><a href="ecommerce-listProducts.php">Listado de productos</a></li>
-              </ul>
-
-
+              @if (Auth::user())
+                <div class="panel-body"> <h3>{{Auth::user()->apellido}}, {{Auth::user()->nombre}}</h3>
+                  <img src="storage/avatar/{{Auth::user()->foto_perfil}}" class="img-circle" height="75" width="75" alt="Avatar">
+                </div>
+                <ul>
+                  <li><a href="/productos">Listado de productos</a></li>
+                  <li><a href="/agregar"></a>Agregar nuevo producto</li>
+                  <li><a href="/actualizar">Modificar/Eliminar productos</a> </li>
+                </ul>
+              @endif
             </div>
             <div class="container-fixed">
                 <!--- Footer ------------>
