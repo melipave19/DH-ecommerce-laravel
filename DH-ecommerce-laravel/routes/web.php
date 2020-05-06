@@ -18,6 +18,10 @@ Route::get('/', function () {
 Route::get('/inicio', function () {
     return view('inicio');
 });
+Route::post('/inicio', function () {
+    Auth::logout();
+    return view('inicio');
+});
 
 // Productos
 Route::get('/productos', 'EquipoController@listadoEquipos');
@@ -29,15 +33,15 @@ Route::get('/perfil', function () {
 });
 
 // Agregar equipo
-Route::get('/agregar', 'EquipoController@cargarFormulario');
-Route::post('/agregar', 'EquipoController@agregarEquipo');
+Route::get('/productos/agregar', 'EquipoController@cargarFormulario');
+Route::post('/productos/agregar', 'EquipoController@agregarEquipo');
 
 // Listado equipos para modificar
 Route::get('/productos/actualizar', 'EquipoController@listadoEquiposActualizar');
 
 // Modificar equipo
 Route::get('/productos/actualizar/{idEquipo}', 'EquipoController@actualizarEquipo');
-Route::post('/productos/actualizar/{idEquipo}, EquipoController@modificarEquipo')
+Route::post('/productos/actualizar/{idEquipo}', 'EquipoController@modificarEquipo');
 
 //
 // Eliminar equipo

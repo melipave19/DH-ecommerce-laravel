@@ -16,15 +16,6 @@ class EquipoController extends Controller
       return view('productos',$vac);
     }
 
-    public function listadoEquiposActualizar(){
-      $listadoEquipos = Equipo::paginate(10);
-      $listadoCategorias = Categoria::all();
-      $listadoMarcas = Marca::all();
-      $listadoProveedores = Proveedor::all();
-      $vac = compact('listadoEquipos', 'listadoCategorias','listadoMarcas','listadoProveedores');
-      return view('actualizar',$vac);
-    }
-
     public function mostrarEquipo($idProducto){
       $unEquipo = Equipo::find($idProducto);
       $unaCategoria = Categoria::find($unEquipo->id_categoria);
@@ -32,6 +23,15 @@ class EquipoController extends Controller
       $unProveedor = Proveedor::find($unEquipo->id_proveedor);
       $vac = compact('unEquipo','unaCategoria','unaMarca','unProveedor');
       return view('detalleProductos',$vac);
+    }
+
+    public function listadoEquiposActualizar(){
+      $listadoEquipos = Equipo::paginate(10);
+      $listadoCategorias = Categoria::all();
+      $listadoMarcas = Marca::all();
+      $listadoProveedores = Proveedor::all();
+      $vac = compact('listadoEquipos', 'listadoCategorias','listadoMarcas','listadoProveedores');
+      return view('actualizar',$vac);
     }
 
     public function cargarFormulario(){
@@ -66,6 +66,8 @@ class EquipoController extends Controller
       $nuevoEquipo->habilitado = 1;
       $nuevoEquipo->imagen_principal = $nombreArchivo;
       $nuevoEquipo->save();
+
+      return redirect('/productos/actualizar');
     }
 
     // Devuelve el equipo a Actualizar y lleva al formulario
@@ -86,33 +88,38 @@ class EquipoController extends Controller
     //Realiza a modificacion del equipos
     public function modificarEquipo(Request $req)
     {
-      $estaEnOferta = $req['estaEnOferta'];
+      $equipoModificado = Equipo::find($req['id']);
+
+      $estaEnOferta = $req['estaEnOfertaMod'];
       if($estaEnOferta != 1)
       {
         $estaEnOferta = 0;
       }
+
       if($req->file('imagenPrincipal'))
       {
         $ruta = $req->file('imagenPrincipal')->store("public/productos");
         $nombreArchivo = basename($ruta);
       }
+      else {
+        $nombreArchivo = $equipoModificado->imagen_principal;
+      }
 
-      $nuevoEquipo = new Equipo();
-      $nuevoEquipo->id = $req['id']
-      $nuevoEquipo->nombre_equipo = $req['nombre'];
-      $nuevoEquipo->descripcion = $req['descripcion'];
-      $nuevoEquipo->id_categoria = $req['categoria'];
-      $nuevoEquipo->id_marca = $req['marca'];
-      $nuevoEquipo->precio = $req['precio'];
-      $nuevoEquipo->tamaño_pantalla = $req['tamanioPantalla'];
-      $nuevoEquipo->disco_duro = $req['discoDuro'];
-      $nuevoEquipo->stock_disponible = $req['stockDisponible'];
-      $nuevoEquipo->id_proveedor = $req['proveedor'];
-      $nuevoEquipo->esta_en_oferta = $estaEnOferta;
-      $nuevoEquipo->habilitado = 1;
+      $equipoModificado->nombre_equipo = $req['nombre'];
+      $equipoModificado->descripcion = $req['descripcion'];
+      $equipoModificado->id_categoria = $req['categoria'];
+      $equipoModificado->id_marca = $req['marca'];
+      $equipoModificado->precio = $req['precio'];
+      $equipoModificado->tamaño_pantalla = $req['tamanioPantalla'];
+      $equipoModificado->disco_duro = $req['discoDuro'];
+      $equipoModificado->stock_disponible = $req['stockDisponible'];
+      $equipoModificado->id_proveedor = $req['proveedor'];
+      $equipoModificado->esta_en_oferta = $estaEnOferta;
+      $equipoModificado->habilitado = 1;
+      $equipoModificado->imagen_principal = $nombreArchivo;
+      $equipoModificado->save();
 
-      $nuevoEquipo->imagen_principal = $nombreArchivo;
-      $nuevoEquipo->save();
+      return redirect('/productos/actualizar');
 
     }
 
