@@ -15,7 +15,6 @@ class CrearTablaUsers extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
           $table->Increments('id');
-          $table->timestamps();
           $table->string('nombre',45);
           $table->string('apellido',45);
           $table->integer('edad');

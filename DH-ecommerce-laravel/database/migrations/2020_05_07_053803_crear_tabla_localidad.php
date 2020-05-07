@@ -15,7 +15,6 @@ class CrearTablaLocalidad extends Migration
     {
         Schema::create('localidad', function (Blueprint $table) {
           $table->Increments('id');
-          $table->timestamps();
           $table->string('nombre_localidad',45);
           $table->integer('codigo_postal');
 

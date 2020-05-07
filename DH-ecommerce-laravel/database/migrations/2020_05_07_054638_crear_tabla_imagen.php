@@ -15,7 +15,6 @@ class CrearTablaImagen extends Migration
     {
         Schema::create('imagen', function (Blueprint $table) {
           $table->Increments('id');
-          $table->timestamps();
           $table->string('nombre_archivo',50);
           $table->string('extension_archivo',15);
           $table->integer('tamaño_archivo');

@@ -15,7 +15,6 @@ class CrearTablaVenta extends Migration
     {
         Schema::create('venta', function (Blueprint $table) {
           $table->Increments('id');
-          $table->timestamps();
           $table->string('nombre_empresa');
           $table->dateTime('fecha_venta');
           $table->integer('numero_venta');

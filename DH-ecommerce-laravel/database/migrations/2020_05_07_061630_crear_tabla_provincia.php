@@ -15,7 +15,6 @@ class CrearTablaProvincia extends Migration
     {
         Schema::create('provincia', function (Blueprint $table) {
           $table->Increments('id');
-          $table->timestamps();
            $table->string('nombre_provincia');
            $table->unsignedInteger('pais_id');
            $table->foreign('pais_id','fk_provincia_pais')->references('id')->on('pais')->onDelete('restrict')->onUpdate('restrict');

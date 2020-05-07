@@ -15,7 +15,6 @@ class CrearTablaEquipo extends Migration
     {
         Schema::create('equipo', function (Blueprint $table) {
           $table->Increments('id');
-          $table->timestamps();
           $table->string('nombre_equipo',45);
           $table->string('descripcion',45);
           $table->unsignedInteger('categoria_id');

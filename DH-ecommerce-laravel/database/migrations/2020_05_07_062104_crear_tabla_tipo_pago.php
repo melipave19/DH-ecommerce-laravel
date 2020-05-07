@@ -15,7 +15,6 @@ class CrearTablaTipoPago extends Migration
     {
         Schema::create('tipoPago', function (Blueprint $table) {
           $table->Increments('id');
-          $table->timestamps();
           $table->string('nombre_pago');
           $table->string('descripcion');
 

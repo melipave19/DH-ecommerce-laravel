@@ -15,7 +15,6 @@ class CrearTablaDetalleVenta extends Migration
     {
         Schema::create('detalleVenta', function (Blueprint $table) {
           $table->Increments('id','venta_id');
-          $table->timestamps();
           $table->unsignedInteger('detalleVenta_id');
           $table->foreign('detalleVenta_id','fk_detalleVenta_detalleVenta')->references('id')->on('detalleVenta')->onDelete('restrict')->onUpdate('restrict');
           $table->unsignedInteger('venta_id');

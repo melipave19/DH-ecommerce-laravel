@@ -15,7 +15,6 @@ class CrearTablaSesion extends Migration
     {
         Schema::create('sesion', function (Blueprint $table) {
           $table->Increments('id');
-          $table->timestamps();
           $table->unsignedInteger('users_id');
           $table->foreign('users_id','fk_sesion_users')->references('id')->on('users')->onDelete('restrict')->onUpdate('restrict');
           $table->date('fecha_inicio');

@@ -15,7 +15,6 @@ class CrearTablaGaleria extends Migration
     {
         Schema::create('galeria', function (Blueprint $table) {
           $table->Increments('id');
-          $table->timestamps();
           $table->unsignedInteger('equipo_id');
           $table->foreign('equipo_id','fk_galeria_equipo')->references('id')->on('equipo')->onDelete('restrict')->onUpdate('restrict');
           $table->unsignedInteger('marca_id');

@@ -14,11 +14,11 @@ class CrearTablaProceso extends Migration
     public function up()
     {
         Schema::create('proceso', function (Blueprint $table) {
-          $table->Increments('id');
-          $table->timestamps();
+          $table->Increments('id');    
           $table->tinyInteger('generar_venta');
           $table->tinyInteger('agregar_equipo');
           $table->tinyInteger('consultar_productos');
+          $table->tinyInteger('cargar_usuarios');
 
         });
     }

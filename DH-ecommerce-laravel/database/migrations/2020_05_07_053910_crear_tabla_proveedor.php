@@ -15,7 +15,6 @@ class CrearTablaProveedor extends Migration
     {
         Schema::create('proveedor', function (Blueprint $table) {
           $table->Increments('id');
-          $table->timestamps();
           $table->string('razon_social',45);
           $table->string('direccion',45);
           $table->unsignedInteger('localidad_id');

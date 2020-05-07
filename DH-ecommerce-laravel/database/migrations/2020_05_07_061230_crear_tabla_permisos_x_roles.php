@@ -15,7 +15,6 @@ class CrearTablaPermisosXRoles extends Migration
     {
         Schema::create('permisosXRoles', function (Blueprint $table) {
           $table->Increments('id');
-          $table->timestamps();
           $table->unsignedInteger('proceso_id');
           $table->foreign('proceso_id','fk_permisosXroles_proceso')->references('id')->on('proceso')->onDelete('restrict')->onUpdate('restrict');
           $table->unsignedInteger('rol_id');
