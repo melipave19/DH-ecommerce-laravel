@@ -68,9 +68,9 @@
 
                             <div class="col-md-6">
                                  <select class="form-control" id="rol" name="rol" required>
+                                   	     <option value="1">Comprador</option>
                                          <option value="2">Vendedor</option>
-                                         <option value="3">Comprador</option>
-                                  </select>
+                                 </select>
                                 @error('rol')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>

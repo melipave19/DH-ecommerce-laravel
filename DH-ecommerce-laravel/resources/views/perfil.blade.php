@@ -24,16 +24,21 @@
       <div class="panel-body"> <h3>{{Auth::user()->apellido}}, {{Auth::user()->nombre}}</h3>
         <img src="storage/avatar/{{Auth::user()->foto_perfil}}" class="img-circle" height="75" width="75" alt="Avatar">
       </div>
+      <h3>Acciones</h3>
       <ul>
-        <li><a href="/productos">Listado de productos</a></li>
-        <li><a href="/productos/agregar">Agregar nuevo producto</a></li>
-        <li><a href="/productos/actualizar">Modificar/Eliminar productos</a> </li>
+        @if ( Auth::user()->id_permisos == 1 || Auth::user()->id_permisos === 3)
+          <li><a href="/productos">Ir al listado de productos</a></li>
+        @endif
+        @if (Auth::user()->id_permisos == 2 || Auth::user()->id_permisos == 3)
+          <li><a href="/productos/agregar">Agregar nuevo producto</a></li>
+          <li><a href="/productos/actualizar">Modificar/Eliminar productos</a> </li>
+        @endif
       </ul>
 
   </div>
 @else
-  No hay usuario logueado.
-  @endif
+  <h2>No hay usuario logueado.</h2>
+@endif
 
 
 
