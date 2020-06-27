@@ -11,15 +11,15 @@
         	<li data-target="#myCarousel" data-slide-to="2"></li>
       	</ol>
       	<!-- Wrapper for slides -->
-      	<div class="carousel-inner" style="margin-bottom: 20px;">
-        	<div class="item active">
-          	<img src="storage/carrusel/imagen1.jpg" alt="notebook" style="width:100%;">
+      	<div class="carousel-inner">
+        	<div class="item active carrusel">
+          	<img src="storage/carrusel/imagen1.jpg" class="img-responsive" alt="notebook">
         	</div>
-        	<div class="item">
-          	<img src="storage/carrusel/imagen2.jpg" alt="computer" style="width:100%;">
+        	<div class="item carrusel">
+          	<img src="storage/carrusel/imagen2.jpg" class="img-responsive" alt="computer">
         	</div>
-        	<div class="item">
-          	<img src="storage/carrusel/imagen3.jpg" alt="laptop" style="width:100%;">
+        	<div class="item carrusel">
+          	<img src="storage/carrusel/imagen3.jpg" class="img-responsive" alt="laptop">
         	</div>
       	</div>
       	<!-- Left and right controls -->

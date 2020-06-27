@@ -10,7 +10,7 @@
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   </head>
   <body>
-    <div class="jumbotron" style="margin-bottom: 0px;">
+    <div class="jumbotron" style="margin-bottom:0px; padding-top:0px; padding-bottom:0px;">
   	<div class="container text-center">
     	<h1 id="home">Tienda Online</h1>
     	<p>Poder y tecnología a tu alcance</p>
@@ -18,10 +18,17 @@
     </div>
 
     <nav class="navbar navbar-inverse" role="navigation">
-  	<div class="container-fluid">
-    	<div class="navbar-header">
-      	<a class="navbar-brand" href="#">Logo</a>
-    	</div>
+      <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse"
+                  data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Desplegar navegación</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Menú</a>
+    </div>
+  	<div class="collapse navbar-collapse navbar-ex1-collapse">
     	<ul class="nav navbar-nav">
         	<li class=""><a href="/inicio">Inicio</a></li>
         	<li><a href="/productos">Productos</a></li>
@@ -85,8 +92,7 @@
        		 <div class="col-md-3 footer-brand animated fadeInLeft">
            		 <h2>Tienda Online</h2>
               	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                	<p>© 2019 BS3 UI Kit, All rights reserved</p>
-            	</div>
+           </div>
        		 <div class="col-md-4 footer-nav animated fadeInUp">
            		 <h4>Menu</h4>
            		 <div class="col-md-6">
@@ -99,18 +105,22 @@
                 	</div>
            		 <div class="col-md-6">
                     	<ul class="list">
+                          <li> <a href="/login">Ingresar</a></li>
+                          <li> <a href="/register">Registrarte</a></li>
                         	<li><a href="/carrito">Carrito</a></li>
                     	</ul>
                 	</div>
             	</div>
        		 <div class="col-md-2 footer-social animated fadeInDown">
            		 <h4>Seguinos</h4>
-           		 <ul>
-               		 <li><a href="https://www.facebook.com/">Facebook</a></li>
-               		 <li><a href="https://twitter.com/">Twitter</a></li>
-               		 <li><a href="https://www.instagram.com/">Instagram</a></li>
-                	</ul>
+                <div class="col-md-12">
+               		 <ul>
+                   		 <li><a href="https://www.facebook.com/">Facebook</a></li>
+                   		 <li><a href="https://twitter.com/">Twitter</a></li>
+                   		 <li><a href="https://www.instagram.com/">Instagram</a></li>
+                    </ul>
             	</div>
+            </div>
        		 <div class="col-md-3 footer-ns animated fadeInRight">
            		 <h4>SUSCRIBITE A NUESTRO NEWSLETTER</h4>
                 	<p>Informate de lo último de Tienda Online. Nuestras ofertas y novedades directamente en tu e-mail.</p>
