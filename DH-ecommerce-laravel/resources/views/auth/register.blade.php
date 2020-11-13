@@ -68,8 +68,8 @@
 
                             <div class="col-md-6">
                                  <select class="form-control" id="rol" name="rol" required>
-                                   	     <option value="1">Comprador</option>
-                                         <option value="2">Vendedor</option>
+                                   	     <option value="4">Comprador</option>
+                                         <option value="5">Vendedor</option>
                                  </select>
                                 @error('rol')
                                     <span class="invalid-feedback" role="alert">

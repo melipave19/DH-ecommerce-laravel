@@ -18,15 +18,14 @@ class CrearTablaUsers extends Migration
           $table->string('nombre',45);
           $table->string('apellido',45);
           $table->integer('edad');
-          $table->string('mail',45)->unique();
+          $table->string('email',45)->unique();
           $table->integer('dni');
           $table->string('usuario',45);
           $table->string('password',100);
           $table->date('fecha_nacimiento');
-          $table->unsignedInteger('permisosXRoles_id');
-          $table->foreign('permisosXRoles_id','fk_users_permisosXRoles')->references('id')->on('permisosXRoles')->onDelete('restrict')->onUpdate('restrict');
-          $table->unsignedInteger('imagen_id');
-          $table->foreign('imagen_id','fk_users_imagen')->references('id')->on('imagen')->onDelete('restrict')->onUpdate('restrict');
+          $table->unsignedInteger('id_permisos');
+          $table->foreign('id_permiso','fk_users_permisosXRoles')->references('id')->on('permisosXRoles')->onDelete('restrict')->onUpdate('restrict');
+          $table->varchar('foto_perfil');
 
         });
     }

@@ -13,13 +13,13 @@
       	<!-- Wrapper for slides -->
       	<div class="carousel-inner" style="margin-bottom: 20px;">
         	<div class="item active">
-          	<img src="storage/carrusel/imagen1.jpg" alt="notebook" style="width:100%;">
+          	<img src="storage/imagenes/imagen1.jpg" alt="notebook" style="width:100%;">
         	</div>
         	<div class="item">
-          	<img src="storage/carrusel/imagen2.jpg" alt="computer" style="width:100%;">
+          	<img src="storage/imagenes/imagen2.jpg" alt="computer" style="width:100%;">
         	</div>
         	<div class="item">
-          	<img src="storage/carrusel/imagen3.jpg" alt="laptop" style="width:100%;">
+          	<img src="storage/imagenes/imagen3.jpg" alt="laptop" style="width:100%;">
         	</div>
       	</div>
       	<!-- Left and right controls -->

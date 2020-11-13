@@ -26,10 +26,10 @@
       </div>
       <h3>Acciones</h3>
       <ul>
-        @if ( Auth::user()->id_permisos == 1 || Auth::user()->id_permisos === 3)
+        @if ( Auth::user()->id_permisos == 4 || Auth::user()->id_permisos === 6)
           <li><a href="/productos">Ir al listado de productos</a></li>
         @endif
-        @if (Auth::user()->id_permisos == 2 || Auth::user()->id_permisos == 3)
+        @if (Auth::user()->id_permisos == 5 || Auth::user()->id_permisos == 6)
           <li><a href="/productos/agregar">Agregar nuevo producto</a></li>
           <li><a href="/productos/actualizar">Modificar/Eliminar productos</a> </li>
         @endif

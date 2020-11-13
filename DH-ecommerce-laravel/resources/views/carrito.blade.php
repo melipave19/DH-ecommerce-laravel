@@ -43,7 +43,7 @@
                       <td class="text-center"><strong>Total 99.99</strong></td>
                   </tr>
                   <tr>
-                      <td><a href="./ecommerce-products.php" class="btn btn-warning"><i class="fa fa-angle-left"></i> Continuar comprando</a></td>
+                      <td><a href="/productos" class="btn btn-warning"><i class="fa fa-angle-left"></i> Continuar comprando</a></td>
                       <td colspan="2" class="hidden-xs"></td>
                       <td class="hidden-xs text-center"><strong>Total $99.99</strong></td>
                       <td><a href="#" class="btn btn-success btn-block">Comprar<i class="fa fa-angle-right"></i></a></td>
